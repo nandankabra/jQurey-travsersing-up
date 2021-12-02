@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div{
+                padding: 10px;
+                border: 10px solid red;
+            }
+            ul{
+                padding: 10px;
+                border: 10px solid green;
+            }
+            li{
+                padding: 10px;
+                border: 10px solid purple;
+            }
+            a{
+                display: block;
+                padding: 10px;
+                border: 10px solid rgb(16, 37, 83);
+            }
+        </style>
+    </head>
+    <body>
+            <div >DIV
+                <ul >UL1
+                    <li >LI1
+                        <a href="" >A1.1</a>
+                        <a href="" >A1.2</a>
+                    </li>
+                    <li >LI2
+                        <a href="" >A2.1</a>
+                        <a href="" >A2.2</a>
+                    </li>
+                    <li >LI3
+                        <a href="" >A3.1</a>
+                        <a href="" >A3.2</a>
+                    </li>
+                </ul>
+                <ul >UL2
+                    <li >LI1.1
+                        <a href="" >A1.1</a>
+                        <a href="" >A1.2</a>
+                    </li>
+                    <li >LI2.1
+                        <a href="" >A2.1</a>
+                        <a href="" >A2.2</a>
+                    </li>
+                    <li >LI3.1
+                        <a href="" >A3.1</a>
+                        <a href="" >A3.2</a>
+                    </li>
+                </ul>
+               
+            </div>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            jQuery(function($){
+                //alert('okokoko');
+                //$(selector).action();
+                $('a').parentsUntil("div").css({ "color":"blue","font-size":"1em","border":"20px solid grey"});
+            });
+
+
+        </script>
+    </body>
+</html>
